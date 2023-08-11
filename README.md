@@ -1,11 +1,10 @@
-
 <p align="center">
   <a href="" rel="noopener">
- <img width=150px height=50px src="https://cinesubz.co/wp-content/uploads/2022/10/cinesubz.co-Logo.jpg" alt="cinesub"></a>
+ <img width=150px height=50px src="https://sinhalasub.lk/wp-content/uploads/2020/11/2019.10.7.19h56m33sLAY0.png" alt="sinhalasub"></a>
 </p>
 
 
-<h2 align="center">Cinesubz Movie Downloader</h2>
+<h2 align="center">SinhalaSub.LK Movie Downloader</h2>
 
 
 
@@ -20,7 +19,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-The unofficial Scrap <a href="https://cinesubz.co/" > [https://cinesubz.co/] </a>
+The unofficial Scrap <a href="https://sinhalasub.lk/" > [https://sinhalasub.lk/] </a>
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -42,314 +41,126 @@ npm i @sl-code-lords/movie-dl
 ## 🎈 Usage <a name="usage"></a>
 
 ```ts
-var { Cinesubz }  = require('@sl-code-lords/movie-dl')
+var { SinhalaSub }  = require('@sl-code-lords/movie-dl')
 
 ```
-## Get Movies/Twshows List By Search
+## Get Movies/Twshows List 
+
+
 ```ts
+// By Search
 var input = 'money heist' //movie or tvshow name
-await Cinesubz.get_list.by_search(input) 
-```
+await SinhalaSub.get_list.by_search(input) 
 
-
-```ts
-//result
-
-{
-  status: true,
-  code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
-  results: [
-    {
-      title: 'Money Heist: Korea – Joint Economic Area (TV Series 2022) Complete Season 01',
-      link: 'https://cinesubz.co/tvshows/money-heist-korea-joint-economic-area-tv-series-2022-complete-season-01/',
-      type: 'tvshows'
-    },
-    {
-      title: 'Money Heist (2021)  Sinhala Subtitle | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/tvshows/money-heist-2021-sinhala-sub/',
-      type: 'tvshows'
-    },
-    {
-      title: 'Hell or High Water (2016) Sinhala Subtitle',
-      link: 'https://cinesubz.co/movies/hell-or-high-water-2016-sinhala-subtitle/',
-      type: 'movies'
-    },
-    {
-      title: 'Ambulance (2022) Sinhala Subtitle | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/ambulance-2022-sinhala-sub/',
-      type: 'movies'
-    },
-    {
-      title: 'Sapthamashree Thaskaraha (2014) Sinhala Subtitle | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/sapthamashree-thaskaraha-2014-sinhala-sub/',
-      type: 'movies'
-    },
-    {
-      title: 'Now You See Me (2013) Sinhala Subtitle | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/now-you-see-me-2013-sinhala-sub/',
-      type: 'movies'
-    }
-  ]
-}
-```
-## Get Recently added movies list
-
-```ts
+// BY Recently added movies 
 var page = 1 //page number
-await Cinesubz.get_list.by_recent_movies(page)
-```
-```ts
-//result
+await SinhalaSub.get_list.by_recent_movies(page)
 
-{
-  status: true,
-  code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
-  results: [
-    {
-      title: 'Bird Box Barcelona (2023) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/bird-box-barcelona-2023-sinhala-subtitles/',
-      type: 'movies'
-    },
-    {
-      title: 'Crimson Peak (2015) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/crimson-peak-2015-sinhala-subtitles/',
-      type: 'movies'
-    },
-   18 more...
-  ]
-}
-
-```
-## Get Recently added tvshows list
-
-```ts
+// Get Recently added tvshows list
 var page = 1 //page number
-await Cinesubz.get_list.by_recent_tvshows(page)
-```
-```ts
-//result
+await SinhalaSub.get_list.by_recent_tvshows(page)
 
-{
-  status: true,
-  code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
-  results: [
-    {
-      title: 'Revenant (2023) S01 EP01-04',
-      link: 'https://cinesubz.co/tvshows/revenant-2023-s01/',
-      type: 'tvshows'
-    },
-    {
-      title: 'Lies Hidden in My Garden (2023) S01 EP01-04',
-      link: 'https://cinesubz.co/tvshows/lies-hidden-in-my-garden-2023-s01/',
-      type: 'tvshows'
-    },
-    18 more...
-  ]
-}
-```
-## Get Movies/Tvshows List By Language
-```ts
+// Get Movies/Tvshows List By Language
 var lang = 'English' // Language ( ex : Sinhala , English , Tamil , Hindi , Kannada , France , Japanese , Telugu , Malayalam , Korean , Other )
 var page = 1 //page number
-await Cinesubz.get_list.by_language[lang](page)
-```
-```ts
-//result
+await SinhalaSub.get_list.by_language[lang](page)
 
-{
-  status: true,
-  code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
-  results: [
-    {
-      title: 'xXx: Return of Xander Cage (2017) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/xxx-return-of-xander-cage-2017-sinhala-subtitles/',
-      type: 'movies'
-    },
-    {
-      title: 'xXx: State of the Union (2005) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/xxx-state-of-the-union-2005-sinhala-subtitles/',
-      type: 'movies'
-    },
-    18 more...
-  ]
-}
-```
-
-## Get Movies/Tvshows List By Genre
-```ts
+// Get Movies/Tvshows List By Genre
 var genre = 'Action' // Genre ( ex : History , Thriller , Comedy ,  Horror , Adventure , Science_fiction , Mystery , Animation , Sport ,  Drama , Action , Crime , Romance , Fantasy , Family , War , Adult_only , Short )
 var page = 1 //page number
-await Cinesubz.get_list.by_genre[genre](page)
-```
-```ts
-//result
+await SinhalaSub.get_list.by_genre[genre](page)
 
-{
-  status: true,
-  code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
-  results: [
-     {
-      title: 'xXx: Return of Xander Cage (2017) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/xxx-return-of-xander-cage-2017-sinhala-subtitles/',
-      type: 'movies'
-    },
-    {
-      title: 'xXx: State of the Union (2005) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/xxx-state-of-the-union-2005-sinhala-subtitles/',
-      type: 'movies'
-    },
-    18 more...
-  ]
-}
-```
-## Get Movies/Tvshows List By Year
-```ts
+// Get Movies/Tvshows List By Year
 var year = '2023' // year
 var page = 1 //page number
-await Cinesubz.get_list.by_year(year,page)
-```
-```ts
-//result
+await SinhalaSub.get_list.by_year(year,page)
 
-{
-  status: true,
-  code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
-  results: [
-    {
-      title: 'Mother’s Day (2023) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/mothers-day-2023-sinhala-subtitles/',
-      type: 'movies'
-    },
-    {
-      title: 'Dream (2023) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/dream-2023-sinhala-subtitles/',
-      type: 'movies'
-    },
-    18 more...
-  ]
-}
-```
-## Get Movies/Tvshows List By Actor
-```ts
-var url = 'https://cinesubz.co/cast/dhanush/' // cast link
+// Get Movies/Tvshows List By Actor
+var url = 'https://sinhalasub.lk/cast/dhanush/' // cast link
 var page = 1 //page number
-await Cinesubz.get_list.by_actor(url,page)
-```
-```ts
-//result
+await SinhalaSub.get_list.by_actor(url,page)
 
-{
-  status: true,
-  code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
-  results: [
-    {
-      title: 'Vaathi (2023) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/vaathi-2023-sinhala-subtitles/',
-      type: 'movies'
-    },
-    {
-      title: 'Kodi (2016) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/kodi-2016-sinhala-subtitles/',
-      type: 'movies'
-    },
-    18 more...
-  ]
-}
-```
-## Get Movies/Tvshows List By Director
-```ts
-var url = 'https://cinesubz.co/director/s-s-rajamouli/' // director url
+// Get Movies/Tvshows List By Director
+var url = 'https://sinhalasub.lk/director/s-s-rajamouli/' // director url
 var page = 1 //page number
-await Cinesubz.get_list.by_director(url,page)
+await SinhalaSub.get_list.by_director(url,page)
 ```
 ```ts
-//result
+
+//The results will look like this.
 
 {
   status: true,
   code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
   results: [
     {
-      title: 'Chatrapathi (2005) Sinhala Subtitle | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/chatrapathi-2005-sinhala-sub/',
-      type: 'movies'
+      title: 'Money Heist (2017 – 2021) Sinhala Subtitles | සිංහල උපසිරසි සමඟ',
+      link: 'https://sinhalasub.lk/tvshows/money-heist-2017-sinhala-subtitles/',
+      type: 'tvshows'
     },
     {
-      title: 'Original RRR (2022) Sinhala Subtitle | සිංහල උපසිරැසි සමඟ | TELUGU',
-      link: 'https://cinesubz.co/movies/rrr-2022-sinhala-sub/',
+      title: 'Money Plane (2020) Sinhala Subtitles | සිංහල උපසිරසි සමඟ',
+      link: 'https://sinhalasub.lk/movies/money-plane-2020-sinhala-subtitles/',
       type: 'movies'
     },
-    {
-      title: 'Magadheera (2009) Sinhala Subtitle | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/magadheera-2009-sinhala-sub/',
-      type: 'movies'
-    },
-    {
-      title: 'Baahubali 2: The Conclusion (2017) Sinhala Subtitle | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/baahubali-2-the-conclusion-2017-sinhala-sub/',
-      type: 'movies'
-    },
-    {
-      title: 'Baahubali: The Beginning (2015) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ',
-      link: 'https://cinesubz.co/movies/baahubali-the-beginning-2015-sinhala-subtitles/',
-      type: 'movies'
-    }
+   2 more...
   ]
 }
 ```
 ## Get Movie Details and Download Links
 ```ts
-var url = 'https://cinesubz.co/movies/original-k-g-f-chapter-2-2022-kannada-with-sinhala-sub/' // movie url
-await Cinesubz.movie(url)
+var url = 'https://sinhalasub.lk/movies/rrr-2022-sinhala-subtitles/' // movie url
+await SinhalaSub.movie(url)
 ```
 ```ts
 //result
 {
-  status: true,
-  code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
-  result: {
-    title: 'Original K.G.F: Chapter 2 (2022) KANNADA With Sinhala Sub',
-    subtitle_author: 'ಕೆ.ಜಿ.ಎಫ್: Chapter 2',
-    categories: [ 'Action', 'Drama', 'Kannada' ],
-    release_date: 'Apr. 14, 2022',
-    country: 'India',
-    duration: '168 Min.',
-    director: {
-               name: 'Prashanth Neel',
-               link: 'https://cinesubz.co/director/prashanth-neel/'
-              },
-    cast: [
-           { name: 'Yash', link: 'https://cinesubz.co/cast/yash/' },
-           { name: 'Sanjay Dutt', link: 'https://cinesubz.co/cast/sanjay-dutt/'},
-           8 more...
-          ],
-    desc: 'The blood-soaked land of Kolar Gold Fields (KGF) has a new overlord now – Rocky, whose name strikes fear in the heart of his fo...',
-    images: [
-             'https://i0.wp.com/cinesubz.co/wp-content/uploads/2022/05/photo_2022-04-08_03-03-51.jpg?fit=226%2C300&ssl=1',
-             'https://image.tmdb.org/t/p/original/nsV5Mfi9FAV4w8eDsdr7uqVswOk.jpg',
-             7 more...
-            ],
-    dl_links: [
-               {
-                quality: 'HQ 1080p WEB-DL',
-                size: '9 GB',
-                link: 'https://d.cd38lk.workers.dev/1:/Movie2/2205/16/K.G.F%20Chapter%202%20(2022)%20Kannada%20(Org%20Vers)%C2%A0True%20Web-Dl%20-%201080P%20-%20Avc%20-%20Untouched%20-%20(Dd+5.1%20-%20640Kbps%20&%20Aac%202.0)%C2%A0-%209.5%20Gb%C2%A0-.mp4'
-              },
-              {
-               quality: 'WEBDL SD 480p',
-               size: '800 MB',
-               link: 'https://d.cd38lk.workers.dev/1:/Movie2/2205/16/K.G.F%20Chapter%202%20(2022)%20Kannada%20(Orginal)%20TRUEWEB-DL-%5BCineSubz.com%5D-480P.mp4'
-              },
-              3 more...
-              ]
-           }
+  "status": true,
+  "code_creator": {
+    "name": "Thisal Sanujaya",
+    "github": "@sanuwaofficial"
+  },
+  "result": {
+    "title": "RRR (2022) Sinhala Subtitles | සිංහල උපසිරසි සමඟ",
+    "subtitle_author": "రౌద్రం రణం రుధిరం",
+    "categories": ["Action","Drama","History","Telugu","War"],
+    "release_date": "Mar. 24, 2022",
+    "country": "India",
+    "duration": "187 Min.",
+    "director": { "name": "S.S. Rajamouli","link": "https://sinhalasub.lk/director/s-s-rajamouli/"},
+    "cast": [
+      {"name": "N.T. Rama Rao Jr.","link": "https://sinhalasub.lk/cast/n-t-rama-rao-jr/"},
+      {"name": "Ram Charan","link": "https://sinhalasub.lk/cast/ram-charan/"},
+      8 more...
+    ],
+    "desc": "",
+    "images": [
+      "https://sinhalasub.lk/wp-content/uploads/2022/03/u0XUBNQWlOvrh0Gd97ARGpIkL0-200x300.jpg",
+      "https://images.hindustantimes.com/img/2022/04/01/1600x900/RRR-Movie-Review_1648825470847_1648825479894.jpg",
+      "https://image.tmdb.org/t/p/original/mQBz0kkJw9gWW1accn1UIPVnvtL.jpg",
+     8 more...
+    ],
+    "dl_links": [
+      {
+        "quality": "FHD 1080p",
+        "size": "4.55 GB",
+        "link": "https://001.sinhalaking.tk/0:/Movie/Telugu/RRR%20(2022)/www.SinhalaSub.net%20-%20RRR%20(2022)%20Telugu%20HQ%20HDRip%201080p.mp4"
+      },
+      {
+        "quality": "HD 720p",
+        "size": "2.03 GB",
+        "link": "https://001.sinhalaking.tk/0:/Movie/Telugu/RRR%20(2022)/www.SinhalaSub.net%20-%20RRR%20(2022)%20Telugu%20HQ%20HDRip%20720p.mp4"
+      },
+    8 more...
+    ]
+  }
 }
 
 ```
 ## Get Tvshow Details and episode Links
 ```ts
-var url = 'https://cinesubz.co/tvshows/money-heist-2021-sinhala-sub/' // tvshow url
-await Cinesubz.tvshow(url)
+var url = 'https://sinhalasub.lk/tvshows/money-heist-2017-sinhala-subtitles/' // tvshow url
+await SinhalaSub.tvshow(url)
 ```
 ```ts
 //result
@@ -358,27 +169,36 @@ await Cinesubz.tvshow(url)
   status: true,
   code_creator: { name: 'Thisal Sanujaya', github: '@sanuwaofficial' },
   result: {
-    title: 'Money Heist (2021) Sinhala Subtitle | සිංහල උපසිරැසි සමඟ',
-    categories: [ 'Crime', 'Drama' ],
+    title: 'Money Heist (2017 – 2021) Sinhala Subtitles | සිංහල උපසිරසි සමඟ',
+    categories: [ 'Crime', 'Drama', 'Spanish'],
+    info: {
+      Original_title: "La Casa de Papel",
+      TMDb_Rating: " 8.3 16,046 votes ",
+      First_air_date: "May. 02, 2017",
+      Last_air_date: "Dec. 03, 2021",
+      Seasons: "3",
+      Episodes: "41",
+      Average_Duration: "70 minutes "
+    },
     cast: [
-           { name: 'Álvaro Morte', link: 'https://cinesubz.co/creator/alex-pina/' },
-           { name: 'Úrsula Corberó', link: 'https://cinesubz.co/cast/alvaro-morte/' },
+           { name: 'Álvaro Morte', link: 'https://sinhalasub.lk/cast/alvaro-morte/' },
+           { name: 'Úrsula Corberó', link: 'https://sinhalasub.lk/cast/ursula-corbero/' },
            8 more...
           ],
     links: [ 
             [
              { episode: '1 - 1',
-               link: 'https://cinesubz.co/episodes/money-heist-1x1/'},
+               link: 'https://sinhalasub.lk/episodes/money-heist-s1e1/'},
              {
               episode: '1 - 2',
-              link: 'https://cinesubz.co/episodes/money-heist-1x2/' },
+              link: 'https://sinhalasub.lk/episodes/money-heist-s1e2/' },
              11 more...
            ], 
            [
              { episode: '2 - 1',
-               link: 'https://cinesubz.co/episodes/money-heist-2x1/'},
+               link: 'https://sinhalasub.lk/episodes/money-heist-s2e1/'},
              { episode: '2 - 2',
-               link: 'https://cinesubz.co/episodes/money-heist-2x2/' },
+               link: 'https://sinhalasub.lk/episodes/money-heist-s2e2/' },
              7 more...
            ],
             3 more... 
@@ -388,33 +208,43 @@ await Cinesubz.tvshow(url)
 ```
 ## Get Episode Details and download Links
 ```ts
-var url = 'https://cinesubz.co/episodes/money-heist-1x2/' // episode url
-await Cinesubz.episode(url)
+var url = 'https://sinhalasub.lk/episodes/money-heist-s2e2/' // episode url
+await SinhalaSub.episode(url)
 ```
 ```ts
 //result
-
 {
-  title: 'Money Heist (2021) Sinhala Subtitle | සිංහල උපසිරැසි සමඟ: 1x2',
-  desc: 'Knowing that the police won’t try to storm the building again after their first failed attempt, the robbers start to use the hostages to print money, to dig a tunnel for their escape, and to negotiate with the police. Raquel, who quit due to a verbal argument with Colonel Prieto after the failed rescue mission, meets a strange gentleman at a bar and gets suspicious. Because of Alison’s phone, the police is able to identify 2 of the robbers, Tokyo and Rio – and that’s not the only phone the robbers missed to collect.',
-  release_date: 'May. 09, 2017',
-  images: [
-    'https://image.tmdb.org/t/p/original/e5sVue90Xd7kbTLrfbArexjpPEz.jpg',
-    'https://image.tmdb.org/t/p/original/rVHvenlB4VcNeX7joIevfgZZBJR.jpg',
-    5 more...
-  ],
-  links: [
-    {
-      quality: 'Direct Download WebRip 480P',
-      size: '200 MB',
-      link: 'https://d.cd013.workers.dev/1:/TV%20Series/Money.Heist/S01/CineSubz.com%20-%20Money.Heist.S01E02.SPANISH.480p.10bit.WEBRip.2CH.x265.HEVC-PSA.mp4'
-    },
-    {
-      quality: 'Direct Download WebRip 720P',
-      size: '400 MB',
-      link: 'https://d.cd013.workers.dev/1:/TV%20Series/Money.Heist/S01/CineSubz.com%20-%20Money.Heist.S01E02.SPANISH.720p.10bit.WEBRip.2CH.x265.HEVC-PSA.mp4'
-    }
-  ]
+  "status": true,
+  "code_creator": {
+    "name": "Thisal Sanujaya",
+    "github": "@sanuwaofficial"
+  },
+  "result": {
+    "title": "Money Heist (2017 – 2021) Sinhala Subtitles | සිංහල උපසිරසි සමඟ: 2x2",
+    "desc": "The Professor recruits Martin to put his brother’s plan into action and target the Bank of Spain. First step? Create total chaos.",
+    "release_date": "Jul. 19, 2019",
+    "images": [
+      "https://image.tmdb.org/t/p/original/wg7nd7r0Iptr2W8kW37OSed1C4q.jpg",
+      "https://image.tmdb.org/t/p/original/cwFuj35BzUNWSNSoAyOscwpAT2n.jpg"
+    ],
+    "dl_links": [
+      {
+        "quality": "HD 720p",
+        "size": "470 MB",
+        "link": "https://001.sinhalaking.tk/0:/TV/Money%20Heist%20(TV%20Series%202017%E2%80%932021)/S02/www.SinhalaSub.net%20-%20La.Casa.de.Papel.S02E02%20WEBRip%20720p.mp4"
+      },
+      {
+        "quality": "HD 720p",
+        "size": "470 MB",
+        "link": "https://002.sinhalaking.tk/0:/TV/Money%20Heist%20(TV%20Series%202017%E2%80%932021)/S02/www.SinhalaSub.net%20-%20La.Casa.de.Papel.S02E02%20WEBRip%20720p.mp4"
+      },
+      {
+        "quality": "HD 720p",
+        "size": "470 MB",
+        "link": "https://003.sinhalaking.tk/0:/TV/Money%20Heist%20(TV%20Series%202017%E2%80%932021)/S02/www.SinhalaSub.net%20-%20La.Casa.de.Papel.S02E02%20WEBRip%20720p.mp4"
+      }
+    ]
+  }
 }
 ```
 
